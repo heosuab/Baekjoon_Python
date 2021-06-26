@@ -1,0 +1,6 @@
+num_list = []
+
+for i in range(0, 9):
+    num_list.append(int(input()))
+
+print(max(num_list), num_list.index(max(num_list))+1, sep='\n')
