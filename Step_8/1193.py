@@ -1,5 +1,4 @@
 num = int(input())
-
 line, i = 1, 1
 
 while 1:
