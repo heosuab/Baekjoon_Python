@@ -6,7 +6,7 @@
 
 * 시간복잡도 :  ![figure1](./img/figure1.gif)
 
-루프문을 통해 모든 인덱스에 접근 : ![figure2](./img/figure2.gif), 최소값을 찾으면 현재 인덱스와 swap : ![figure2](./img/figure2.gif)
+  루프문을 통해 모든 인덱스에 접근 : ![figure2](./img/figure2.gif), 최소값을 찾으면 현재 인덱스와 swap : ![figure2](./img/figure2.gif)
 
 #### 구현
 
@@ -37,6 +37,10 @@ def selection_sort(arr):
 
 타 정렬 알고리즘에 비하여 swap이 빈번히 일어남
 
+* 시간복잡도 : ![figure1](./img/figure1.gif)
+
+  루프문을 통해 모든 인덱스에 방문 : ![figure2](./img/figure2.gif), 인접한 원소와 대소비교 및 swap : ![figure2](./img/figure2.gif)
+
 #### 예시
 
 1. Initial : [5, 3, 4, 1, 2]
@@ -58,4 +62,21 @@ def bubble_sort(arr):
 
 
 ## 3. 삽입 정렬 : Insertion Sort
+
+모든 요소를 앞에서부터 정렬 범위를 확장시켜나가며 정렬 진행
+
+이미 정렬된 배열 부분과 확장된 범위 부분을 비교하며, 자신의 위치를 찾아 삽입함으로써 정렬 완성
+
+선택, 거품 정렬과는 달리 정렬이 진행될수록 범위 넓어짐
+
+outer루프는 순방향, inner루프는 역방향으로 반복 진행
+
+* 시간복잡도 : ![figure1](./img/figure1.gif)
+
+  루프문을 통해 정렬 범위를 2개로 시작하여 전체로 확장해 나아가기 때문에 기본적으로 ![figure2](./img/figure2.gif)시간을 소모하며, 각 회차마다 정렬 범위에 추가된 값과 기존 값들과의 대소 비교 및 swap을 위해 ![figure2](./img/figure2.gif)의 시간이 추가적으로 소모된다.
+
+#### 구현
+
+~~~
+~~~
 
