@@ -30,6 +30,9 @@ for _ in range(M):
     graph[link_start].append(link_end)
     graph[link_end].append(link_start)
 
+for i in range(N):
+    graph[i+1] = sorted(graph[i+1])
+
 dfs_visited = []
 dfs(graph, V)
 print(*dfs_visited)
